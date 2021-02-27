@@ -1,0 +1,115 @@
+
+(rules PCB Elise-BDM2
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout on)
+    (autoroute on)
+    (postroute on)
+    (vias off)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 10533)
+    (layer_rule F.Cu
+      (active off)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.4)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.7)
+    )
+  )
+  (rule
+    (width 354.0)
+    (clear 354.2)
+    (clear 177.0 (type smd_to_turn_gap))
+    (clear 88.6 (type smd_smd))
+    (clear 254.2 (type smd_"kicad_default"))
+    (clear 254.2 (type "kicad_default"_"kicad_default"))
+    (clear 254.2 (type test_test))
+  )
+  (padstack "Via[0-1]_889:635_um"
+    (shape
+      (circle F.Cu 889.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 889.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_889:0_um"
+    (shape
+      (circle F.Cu 889.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 889.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_889:635_um" "Via[0-1]_889:635_um" default
+  )
+  (via 
+    "Via[0-1]_889:0_um" "Via[0-1]_889:0_um" default
+  )
+  (via 
+    "Via[0-1]_889:635_um-kicad_default" "Via[0-1]_889:635_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_889:0_um-kicad_default" "Via[0-1]_889:0_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_889:635_um-test" "Via[0-1]_889:635_um" test
+  )
+  (via 
+    "Via[0-1]_889:0_um-test" "Via[0-1]_889:0_um" test
+  )
+  (via_rule
+    default "Via[0-1]_889:635_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_889:635_um-kicad_default"
+  )
+  (via_rule
+    test "Via[0-1]_889:635_um-test"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 354.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    +5V DSCK DSDI DSDO GND HRESET "N-0000027" "N-0000029"
+    "N-0000033" "N-0000034" "N-0000038" "N-0000039" "N-0000042" SRESET "V_BDM" "pic_DSCK"
+    "pic_DSDI" "pic_DSDO" "pic_HRESET" "pic_SRESET"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 300.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class test
+    (clearance_class test)
+    (via_rule test)
+    (rule
+      (width 654.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

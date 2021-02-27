@@ -1,0 +1,73 @@
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 08/03/2016 00:59:41
+
+BeginCmp
+TimeStamp = /56DE15B6;
+Reference = C1;
+ValeurCmp = 100nF;
+IdModule  = C2;
+EndCmp
+
+BeginCmp
+TimeStamp = /568934B0;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /5689457B;
+Reference = P1;
+ValeurCmp = CONN_5X2;
+IdModule  = PIN_ARRAY_5x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5689349D;
+Reference = P2;
+ValeurCmp = ICSP;
+IdModule  = PIN_ARRAY_5x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5689349E;
+Reference = R1;
+ValeurCmp = 10K;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = /568934AF;
+Reference = R2;
+ValeurCmp = R330;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = /5689349C;
+Reference = U1;
+ValeurCmp = PIC16F1459;
+IdModule  = DIP-20__300;
+EndCmp
+
+BeginCmp
+TimeStamp = /56893E68;
+Reference = U2;
+ValeurCmp = SN74LVC8T245;
+IdModule  = tssop-24;
+EndCmp
+
+BeginCmp
+TimeStamp = /56893E7F;
+Reference = U3;
+ValeurCmp = SN74LVC8T245;
+IdModule  = tssop-24;
+EndCmp
+
+BeginCmp
+TimeStamp = /568934A1;
+Reference = U4;
+ValeurCmp = USBCONN;
+IdModule  = USB_B;
+EndCmp
+
+EndListe
